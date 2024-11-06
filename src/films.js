@@ -7,15 +7,23 @@ function getAllDirectors(array) {
 }
 
 // Exercise 2: Get the films of a certain director
+// function getMoviesFromDirector(array, director) {
+//   let result = array.filter(function (pelicula){
+//     if (pelicula.director === director){
+//       return pelicula.title;
+//     };
+//   });
+//   console.log("resultado: ")
+//   return result;
+// };
+
 function getMoviesFromDirector(array, director) {
-  let result = array.filter(function (pelicula){
-    if (pelicula.director === director){
-      return pelicula.title;
-    };
-  });
-  console.log("resultado: "+result)
-  return result;
-};
+  let peliculasDelDirector = array
+  .filter(pelicula => pelicula.director === director)
+  // .map(pelicula => pelicula.title);
+  console.log("result", peliculasDelDirector);
+  return peliculasDelDirector;
+}
 
 // Exercise 3: Calculate the average of the films of a given director.
 function moviesAverageOfDirector(array, director) {
