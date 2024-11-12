@@ -50,7 +50,18 @@ function orderByYear(array) {
 }
 
 // Exercise 6: Calculate the average of the movies in a category
-function moviesAverageByCategory() {
+function moviesAverageByCategory(array,genero) {
+
+  let peliculasDelGenero = array.filter(peli => peli.genre.includes(genero));
+  
+  console.log(peliculasDelGenero);
+
+  let nota = peliculasDelGenero.reduce((notaMedia, pelicula) => notaMedia+= pelicula.score,0);
+
+  const promedioNotas = peliculasDelGenero.length >0? nota/peliculasDelGenero.length : 0;
+
+  console.log(peliculasDelGenero);
+  return parseFloat(promedioNotas.toFixed(2));
 
 }
 
