@@ -280,10 +280,12 @@ describe('Function "orderByYear"', () => {
       orderByYear([
         { title: 'abc', year: 2002 },
         { title: 'bac', year: 1982 },
+        { title: 'aba', year: 1982 },
         { title: 'aab', year: 1982 }
       ])
     ).toEqual([
       { title: 'aab', year: 1982 },
+      { title: 'aba', year: 1982 },
       { title: 'bac', year: 1982 },
       { title: 'abc', year: 2002 }
     ]);

@@ -32,12 +32,21 @@ function orderAlphabetically(array) {
     console.log("menos de 20 pelis");
     return pelisOrdenadas;
   }
-  else return pelisOrdenadas.slice(0,20);
+  return pelisOrdenadas.slice(0,20);
 }
 
 // Exercise 5: Order by year, ascending
-function orderByYear() {
-
+function orderByYear(array) {
+  let pelisPorAño = array.toSorted(function(peli1,peli2){
+    if(peli1.year === peli2.year){
+      console.log("mismo peli");
+      if(peli1.title < peli2.title)
+      return -1;
+    }
+    return peli1.year - peli2.year;
+  });
+  console.log(pelisPorAño);
+  return pelisPorAño;
 }
 
 // Exercise 6: Calculate the average of the movies in a category
