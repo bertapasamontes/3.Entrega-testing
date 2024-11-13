@@ -1,4 +1,4 @@
-# 🎬 Testing de Funcionalidades de Películas
+# 🎬 Testing
 
 ## 📄 Descripción
 Este proyecto implementa y prueba funcionalidades relacionadas con un catálogo de películas en JavaScript. Se incluyen funciones para manipular y consultar un conjunto de películas (`movies`), permitiendo filtrar por año, director, género, y más. Las pruebas están diseñadas para asegurar que las funciones operan correctamente, proporcionando resultados fiables para las consultas de películas.
