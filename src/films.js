@@ -81,18 +81,18 @@ function hoursToMinutes(array) {
         duration: horas*60+mins
       };
     }
-    else{
-      const result1 = regexHoras.exec(duracion);
-      const result2 = regexMins.exec(duracion);
-      if(result1 || result2){
-        let horas = parseInt(result1) || 0;
-        let mins = parseInt(result2) || 0;
-        //sobreescribimos los datos 
-        return {...peli,
-          duration: horas*60 +mins
-        };
-      }
+    
+    const result1 = regexHoras.exec(duracion);
+    const result2 = regexMins.exec(duracion);
+    if(result1 || result2){
+      let horas = parseInt(result1) || 0;
+      let mins = parseInt(result2) || 0;
+      //sobreescribimos los datos 
+      return {...peli,
+        duration: horas*60 +mins
+      };
     }
+    
     
   });
   console.log(nuevoArray);
