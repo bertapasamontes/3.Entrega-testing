@@ -1,86 +1,55 @@
-# Sprint 3 IT Academy | Video management tool
+# 🎬 Testing de Funcionalidades de Películas
 
-## Introduction
+## 📄 Descripción
+Este proyecto implementa y prueba funcionalidades relacionadas con un catálogo de películas en JavaScript. Se incluyen funciones para manipular y consultar un conjunto de películas (`movies`), permitiendo filtrar por año, director, género, y más. Las pruebas están diseñadas para asegurar que las funciones operan correctamente, proporcionando resultados fiables para las consultas de películas.
 
-A company in the audiovisual sector has asked us for a web application that will allow their employees to quickly find movies from a large database they have, since the process is currently done manually.
+## ✨ Características
+- **Catálogo de Películas**: Un conjunto de datos (`movies`) con información de películas, incluyendo título, año, director, duración, género y puntuación.
+- **Funciones de Consulta**: Funciones que permiten realizar consultas complejas, como obtener la mejor película de un año concreto, listar las películas por director, y otras opciones de filtrado.
+- **Pruebas Unitarias**: Conjunto de pruebas unitarias para validar el correcto funcionamiento de cada una de las funciones de consulta y manipulación de datos.
 
-You will be in charge of setting up the core of the application: all the logic of filtering and sorting of movies. You have 2 weeks to finish, which is how long this sprint lasts.
+## 💻 Tecnologías Utilizadas
+- JavaScript
+- Jest (para las pruebas)
+- Node.js (entorno de ejecución para los tests)
 
-<br>
+## 📋 Requisitos
+- **Node.js** y **npm** deben estar instalados para ejecutar los tests y trabajar en el entorno de desarrollo.
 
-## Requirements
+## 🛠️ Instalación
+1. Clona el repositorio:
+   ```bash
+   git clone https://github.com/bertapasamontes/3.Entrega-testing
+   ```
+2. Accede al directorio del proyecto:
+   ```bash
+   cd 3.Entrega-testing
+   ```
+3. Instala las dependencias:
+   ```bash
+   npm install
+   ```
 
+## ▶️ Ejecución
+- Para ejecutar los tests y verificar el funcionamiento de las funciones, usa el siguiente comando en el terminal:
+   ```bash
+   npm test
+   ```
+- Esto generará un archivo `test-results.html` que contiene los resultados detallados de las pruebas. Puedes abrir este archivo en un navegador para revisar los resultados de los tests.
 
-1. Clone this repo
-```bash
-$ git clone https://github.com/IT-Academy-BCN/starter-code-frontend-sprint-3-movies
-```
+## 📂 Estructura del Proyecto
+- **src/data.js**: Contiene el array de objetos `movies`, donde cada objeto representa una película con propiedades como `title`, `year`, `director`, `duration`, `genre`, y `score`.
+- **src/films.js**: Incluye varias funciones que permiten realizar consultas y manipulación de los datos en `movies`. Ejemplos de funcionalidades:
+  - Obtener la mejor película de un año específico.
+  - Filtrar películas por director.
+  - Listar películas por género, entre otras.
+- **tests/films.spec.js**: Contiene las pruebas unitarias para cada función de `films.js`. Cada prueba verifica que la función correspondiente devuelva resultados correctos y manejos de datos válidos.
 
-2. Unlink your repo from the itacademy repository
-```bash
-$ git remote rm origin
-```
+## 🌐 Despliegue
+Este proyecto está diseñado para ejecutarse localmente. Si deseas incluirlo en un flujo CI/CD o en una plataforma de testing continua, puedes integrarlo con herramientas como GitHub Actions o Jenkins.
 
-3. Link your repo to the repository you have to create in your github account
-```bash
-$ git remote add origin <your repo name!>
-```
-
-<br>
-
-## Submission
-
-1. Upon completion, run the following commands:
-
-```bash
-$ git add .
-$ git commit -m "Sprint Solution"
-$ git push origin master
-```
-
-2. Create Pull Request.
-
-3. Upload the link to the virtual campus so that your mentor can correct it and give you feedback.
-
-
-
-<br>
-
-## Introduction
-
-The statement of the exercise is available on the virtual campus.
-
-<br>
-
-## Tests!
-
-
-```shell
-$ npm install
-$ npm run test:watch
-```
-
-And last, open the generated `test-results.html` file with the "Live Server" VSCode extension to see test results.
-
-Apart from the statement, you will know exactly what you are asked to do by looking at the file `tests/films.spec.js`, all tests are already defined here!
-
-<br>
-
-## Instructions
-
-You have the following indications from the frontend responsible:
-
-- It is mandatory to implement all loops in ES6 (using map, reduce, filter and sort to manipulate arrays).
-
-- As at the moment we don't consume data from a server using an API, we will work with data from the src/data.js archive. For the moment we will implement the logic using
-an array of information about 250 movies.
-
-- The implementation is about processing this array of movies, to display it as requested in each exercise.
-
-- The logic to implement will be placed in the src/films.js file.
-
-- You don't need to show the result of each function on the screen. Your goal is to pass the tests.  More information on how to program oriented to pass tests at the end of the document.
-
-- Don't forget to include the capture of the test results in the virtual campus.
-
-
+## 🤝 Contribuciones
+Contribuciones y mejoras en los tests o en las funcionalidades del catálogo son bienvenidas. Para contribuir:
+1. Haz un fork del repositorio.
+2. Crea una rama para tu modificación.
+3. Haz un pull request con una descripción de los cambios.
